@@ -1,4 +1,4 @@
-<div class="stolen-frosty span3 offset3 text-center">
+<div class="stolen-frosty span5 offset3 text-center">
 
  <h1 class="stolen-frosty">
 
@@ -24,5 +24,7 @@
 <%= link_to "Back", pics_path, :class=> 'btn btn-success btn-warning' %>
 
 <%= link_to "Delete", pic_path(@pic), :method=> :delete, :class=> 'btn btn-large btn-danger' %>
+
+<%= link_to 'Edit', edit_pic_path(@pic), :class => 'btn btn-large' %>
 
 </div>
