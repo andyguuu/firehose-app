@@ -19,16 +19,26 @@
     <span class="icon-bar"></span>
     </a>
      
-    <!-- Be sure to leave the brand out there if you want it shown -->
-    <a class="brand" href="#">Firehose App</a>
-     
+    <!-- Be sure to leave the brand out there if you want it shown <a class="brand" href= "#">Firehose App</a> -->
+    
+     <!-- <a class="brand" href= "#">Firehose App</a> -->
+    
+    <%= link_to 'Firehose App', root_path, :class=>'brand' %>
+
     <!-- Everything you want hidden at 940px or less, place within here -->
     <div class="nav-collapse collapse">
     <!-- .nav, .navbar-search, .navbar-form, etc -->
     	<ul class="nav">
     		<li>
-    			 <%=link_to 'My App', '#' %>
-    		</li>
+    			 <%=link_to 'Lessons', pics_path%> 
+                
+                            <!-- pics_path points to pics#index, go to terminal and use "rake routes" command -->
+            </li>
+
+            <li>
+                <%=link_to 'Upload', new_pic_path%> 
+
+            </li>
     </div>
      
     </div>
