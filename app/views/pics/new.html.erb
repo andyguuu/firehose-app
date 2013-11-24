@@ -7,11 +7,19 @@
 
 <br/>
 
+
+
+
+
 <%= simple_form_for @pic do |f| %>
 		
 <h2>
 		<%=f.input :lesson, label: 'Lesson ID', placeholder: '1st, 2nd, 3rd' %>
 		<br/>
+
+		<%= f.input :image %>
+
+		<br />
 		<%=f.input :emotion, label: 'How did you feel?', placeholder: 'Stocked, Jazzed, Super' %>
 		<br/>
 		<%=f.input :learned, label: 'What did you learn?', placeholder: 'HTML, CSS, RAILS, RUBY' %>
