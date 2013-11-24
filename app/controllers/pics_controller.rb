@@ -1,5 +1,10 @@
 class PicsController < ApplicationController
 
+
+	def show
+		@pic=Pic.find (params[:id])
+	end
+
 	def create
 
 		@pic=Pic.create( pic_params )
@@ -9,6 +14,13 @@ class PicsController < ApplicationController
 		else
 			render :new, :status => :unprocessable_entity
 		end
+
+	end
+
+	def destroy
+
+		Pic.destroy(params[:id])
+		redirect_to pics_path 
 
 	end
 
